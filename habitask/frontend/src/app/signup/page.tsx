@@ -12,15 +12,7 @@ const Signup = () => {
       <div className="flex items-center justify-start max-w-screen">
         
         {/* Imagem posicionada à esquerda */}
-        <div className="flex-shrink-0">
-          <Image
-            src={require("../../public/logo.png")}
-            alt="Logo"
-            width={400}
-            height={400}
-            className="object-fit-cover"
-          /> 
-        </div>
+       
 
         {/* Texto alinhado à direita da imagem */}
         <div className="ml-8"> 
