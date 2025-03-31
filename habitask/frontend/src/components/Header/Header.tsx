@@ -1,30 +1,48 @@
-'use client';
-
 /*imports*/
 import Link from "next/link";
 import Image from "next/image";
-import { Inter } from "next/font/google";
+import logo from "../../public/logo.png";
+import { Geist } from "next/font/google";
+import { Tektur } from "next/font/google";
+import { purpleText } from "@/app/layout";
 
+//TODO: deixar o header menor, tipo todoist
+//TODO: deixar o header mais bonito e responsivo
+//TODO: fazer a pagina e os cards com opinioes embaixo
 const Header = () => {
-  const yellowtext = "hover:text-yellow-400 py-2 transition-colors";
+  const defaultColorText = "relative py-2 transition-colors hover:text-[#8c44d9] after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px]  after:bg-[#8c44d9] after:transition-all after:duration-400 hover:after:w-full";
+
   return (
     <>
-      <header className="fixed top-0 left-0 w-full h-30 bg-gray-900 text-white flex items-center justify-between px-6 shadow-md z-50">
-        <Link href="/">
+      <header className="fixed top-0 left-0 w-full h-30 bg-[#18181b] text-white flex items-center justify-between px-30 shadow-md z-50">
+        <div className="select-none">
           <Image
-                src={require("../../public/logo.png")}
-                alt="Logo"
-                width={170}
-                height={120}
-                className="object-contain"
-              />
-          </Link> 
-        <nav className="flex gap-6 text-2xl font-medium">
-          <Link href="/" className={yellowtext}>Home</Link>
-          <Link href="/about" className={yellowtext}>Sobre</Link>
-          <Link href="/contact" className={yellowtext}>Contato</Link>
-          <Link href="/login" className={yellowtext+ " font-custom"}>Login</Link>
-          <Link href="/signup" className={yellowtext + " bg-[#8c44d9] px-4 py-2 rounded-full"}>Try for free</Link>
+            src={logo}
+            alt="Logo"
+            width={170}
+            height={120}
+            className="object-contain"
+          />
+        </div>
+        <nav className="flex gap-6 text-2xl font-semibold">
+          <Link href="/" className={defaultColorText}>
+            Home
+          </Link>
+          <Link href="/about" className={defaultColorText}>
+            Sobre
+          </Link>
+          <Link href="/contact" className={defaultColorText}>
+            Contato
+          </Link>
+          <Link href="/login" className={defaultColorText}>
+            Login
+          </Link>
+          <Link
+            href="/signup"
+            className={" bg-[#8c44d9] px-4 py-2 rounded-full font-(family-name:Tektur)"}
+          >
+            Try for free
+          </Link>
         </nav>
       </header>
       {/* Espaço para evitar sobreposição do conteúdo */}
