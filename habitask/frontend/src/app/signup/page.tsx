@@ -11,8 +11,8 @@ const Signup = () => {
       {/* Container flex para alinhar imagem e texto lado a lado */}
       <div className="flex items-center justify-start max-w-screen">
         {/* Texto alinhado à direita da imagem */}
-        <div className="ml-8"> 
-        <h1 className= " text-3xl font-bold">
+        <div className="ml-8">
+          <h1 className=" text-3xl font-bold">
             <span>Start now, don't lose your time.</span>
             <br />
             <span className={purpleText}>Organize</span> sua vida.
@@ -20,7 +20,7 @@ const Signup = () => {
             Alcance seus <span className={purpleText}>objetivos</span>.
             <br />
             Menos caos, mais{" "}
-            <span className={purpleText+ " font-black"}>conquistas</span>.
+            <span className={purpleText + " font-black"}>conquistas</span>.
           </h1>
         </div>
       </div>
