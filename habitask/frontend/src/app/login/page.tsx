@@ -1,41 +1,25 @@
-'use client';
-import React from "react";
 import Image from "next/image";
+import { purpleText } from "../layout";
+import Link from "next/link";
+import homeImg from "../../public/homeImg.png";
+import LoginForm from "@/components/LoginForm/LoginForm";
+import LogSignButtons from "@/components/LogSignButtons/LogSignButtons";
 
-const Login = () => {
+
+//TODO: FAZER LOGO UM MVP MESMO Q SEJA FEIO,AJEITAR A IMAGEM E DEIXAR CERTINHA, FAZER AS OUTRAS PAGINAS
+const LoginPage = () => {
   return (
-    <div className="container">
-      <div className="content">
-        <div className="logo-container">
-          <Image
-            src={require("../../public/logo.png")}
-            alt="Logo"
-            className="logo"
-            width={200}
-            height={200}
-          />
-          <div className="cta-button">
-            <text>
-              Start now,
-              dont lose your time.
-            </text>
-          </div>
-        </div>
-
-        <div className="text-content">
-          <h1>
-            <span className="purple">Organize</span> sua vida.
-            <br />
-            Alcance seus <span className="purple">objetivos</span>.
-            <br />
-            Menos caos, mais
-            <br />
-            <span className="purple">conquistas</span>.
+    <div className=" w-full h-screen flex items-center justify-center">
+        {/* TEXTO */}
+        <div className="bg-[#2e2e36d5] p-8 rounded-lg border-[#8c44d991] border-4">
+          <h1 className="max-md:pt-[2rem] max-md:text-4xl sm:text-5xl text-center justify-center font-bold text-white mb-8">
+            Log In
           </h1>
+          <LoginForm />
         </div>
-      </div>
     </div>
   );
 };
 
-export default Login;
+export default LoginPage;
+;
