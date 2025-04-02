@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import logo from "../../public/logo.png";
 
-//TODO: deixar o header menor, tipo todoist
+//TODO: deixar o header menor em SM e MD, tipo todoist
 //TODO: deixar o header mais bonito e responsivo
 //TODO: fazer a pagina e os cards com opinioes embaixo
 const Header = () => {
@@ -16,9 +16,9 @@ const Header = () => {
           <Image
             src={logo}
             alt="Logo"
-            width={170}
+            width={150}
             height={120}
-            className="object-contain"
+            className="object-contain pt-1"
           />
         </div>
         <nav className="flex gap-6 text-xl font-semibold">
