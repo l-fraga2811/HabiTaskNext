@@ -2,7 +2,7 @@ import Image from "next/image";
 import { purpleText } from "../layout";
 import Link from "next/link";
 import homeImg from "../../public/homeImg.png";
-import LoginForm from "@/components/LoginForm/LoginForm";
+import LoginForm from "@/components/(page-statics)/LoginForm";
 import LogSignButtons from "@/components/LogSignButtons/LogSignButtons";
 
 

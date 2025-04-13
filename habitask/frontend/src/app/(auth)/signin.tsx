@@ -1,7 +1,4 @@
-import Image from "next/image";
-import { purpleText } from "../layout";
 import Link from "next/link";
-import homeImg from "../../public/homeImg.png";
 
 //TODO: FAZER LOGO UM MVP MESMO Q SEJA FEIO,AJEITAR A IMAGEM E DEIXAR CERTINHA, FAZER AS OUTRAS PAGINAS
 const SigninPage = () => {

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "../styles/globals.css";
-import Header from "@/components/Header/Header";
+import Header from "@/components/(page-statics)/Header";
 
 export const purpleText = "text-[#8c44d9]";
 
